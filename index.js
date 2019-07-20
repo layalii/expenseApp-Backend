@@ -21,23 +21,23 @@ app.use(require("./routes"));
 const Category = mongoose.model("Category");
 const Transaction = mongoose.model("Transaction");
 
-const new_cat1 = new Category({
-  title: "travel",
-  description: "gelooooo cat"
-});
-const new_cat2 = new Category({
-  title: "lifeStyle",
-  description: "gelooooo cat"
-});
+// const new_cat1 = new Category({
+//   title: "travel",
+//   description: "gelooooo cat"
+// });
+// const new_cat2 = new Category({
+//   title: "lifeStyle",
+//   description: "gelooooo cat"
+// });
 
-const new_trans = new Transaction({
-  title: "transa1",
-  description: "",
-  amount: 100,
-  date: 12 / 10 / 2019,
-  categories: [new_cat1._id, new_cat2._id],
-  type: "REVENUE"
-});
+// const new_trans = new Transaction({
+//   title: "transa1",
+//   description: "",
+//   amount: 100,
+//   date: 12 / 10 / 2019,
+//   categories: [new_cat1._id, new_cat2._id],
+//   type: "REVENUE"
+// });
 
 // new_cat1
 //   .save()
@@ -57,7 +57,6 @@ const new_trans = new Transaction({
 //     console.log("transaction SAVED");
 //   })
 //   .catch(e => console.log(e));
-
 app.listen(8000, () => {
   console.log("here the output of my app");
 });

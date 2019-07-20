@@ -15,6 +15,9 @@ app.use(bodyParser.json());
 
 require("./models/transaction");
 require("./models/category");
+require("./models/user");
+
+require("./config/passport");
 
 app.use(require("./routes"));
 

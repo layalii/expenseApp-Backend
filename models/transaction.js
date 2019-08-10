@@ -15,7 +15,8 @@ const transactionSchema = new mongoose.Schema(
     type: { type: String, enum: ["EXPENSE", "REVENUE"] }
   },
   {
-    timestamps: { createdAt: "created_at", updatedAt: "updated_at" }
+    timestamps: { createdAt: "created_at", updatedAt: "updated_at" },
+    minimize: false
   }
 );
 
